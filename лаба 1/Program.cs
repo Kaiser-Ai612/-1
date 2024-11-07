@@ -30,7 +30,7 @@ namespace лаба_1
 
             //2.1
             string a1 = Console.ReadLine();
-            List<int> list = new List<int>() { "А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я"};
+            List<string> list = new List<string>() { "А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я"};
             var index = list.IndexOf(a1);
             Console.WriteLine(list[index+1]);
 
@@ -38,10 +38,10 @@ namespace лаба_1
             int a3 = Convert.ToInt32(Console.ReadLine());
             int b3 = Convert.ToInt32(Console.ReadLine());
             int c3 = Convert.ToInt32(Console.ReadLine());
-            int d = b3 * b3 - 4 * a3 * c3;
-            int x11 = -b3 - Math.Sqrt(d))/2*a3;
-            int x22 =  - b3 + Math.Sqrt(d))/ 2 * a3;
-            Console.WriteLine(x22, x11);
+            double d = b3 * b3 - 4 * a3 * c3;
+            double x11 = (-b3 - Math.Sqrt(d))/2*a3;
+            double x22 = (-b3 + Math.Sqrt(d))/ 2 * a3;
+            Console.WriteLine( $"{x11} {x22}");
 
 
         }
